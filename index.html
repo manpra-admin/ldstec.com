@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDS Infotech | Enterprise IT, Hardware, Cloud & GeM Integration</title>
+    <meta name="description" content="Leading IT System Integrator dealing in Enterprise Hardware, Networking, Surveillance, SAP, Microsoft, Google Workspace & GeM Procurement.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Particle Background Container */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        /* Hero Content Overlay */
+        .hero-content { position: relative; z-index: 10; }
+
+        /* Smooth Marquee Animation */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: scroll 20s linear infinite;
+        }
+        .animate-marquee:hover { animation-play-state: paused; }
+
+        /* Glowing Button Effect */
+        .btn-glow {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+            transition: all 0.3s ease;
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.8);
+            transform: translateY(-2px);
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Top Bar -->
+    <div class="bg-gray-900 text-gray-300 text-xs py-2 hidden md:block">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span><i class="fa-solid fa-envelope mr-2 text-blue-400"></i> info@ldstec.com</span>
+                <span><i class="fa-solid fa-phone mr-2 text-blue-400"></i> +91-9041198111</span>
+                <span><i class="fa-solid fa-globe mr-2 text-blue-400"></i> www.ldstec.com</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="bg-blue-600 text-white p-2 rounded-lg group-hover:rotate-12 transition transform duration-300">
+                    <i class="fa-solid fa-microchip text-2xl"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold text-gray-900 tracking-tight">LDS INFOTECH</span>
+                    <span class="block text-[10px] font-semibold text-blue-600 tracking-widest uppercase">Global IT Solutions</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex space-x-8 text-sm font-semibold text-gray-700">
+                <a href="#about" class="hover:text-blue-600 transition">Company</a>
+                <a href="#solutions" class="hover:text-blue-600 transition">Enterprise Solutions</a>
+                <a href="#oem" class="hover:text-blue-600 transition">OEM Partners</a>
+                <a href="#gem" class="hover:text-blue-600 transition">GeM Portal</a>
+            </nav>
+            <a href="#contact" class="hidden md:flex btn-glow bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-bold items-center space-x-2">
+                <span>Request Quote</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Particles -->
+    <section class="relative bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white py-32 overflow-hidden">
+        <div id="particles-js"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center hero-content">
+            <div inline-block mb-4 data-aos="fade-down">
+                <span class="bg-blue-500/20 text-blue-300 border border-blue-500/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                    Premier System Integrator
+                </span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
+                Powering the Future of <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Enterprise Technology</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 font-light" data-aos="fade-up" data-aos-delay="200">
+                End-to-end IT Infrastructure, Hardware, Cloud Services (Google Workspace, Microsoft, SAP), Networking, and Security Solutions. Trusted GeM Partner for Government Procurement.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6" data-aos="zoom-in" data-aos-delay="300">
+                <a href="#contact" class="btn-glow bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg w-full sm:w-auto">
+                    Place an Order
+                </a>
+                <a href="#solutions" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition w-full sm:w-auto">
+                    Explore Solutions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global OEM Partners Marquee -->
+    <section id="oem" class="py-8 bg-white border-b border-gray-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 mb-4 text-center">
+            <p class="text-sm font-bold text-gray-400 uppercase tracking-widest">Authorized Channel Partner for Global Brands</p>
+        </div>
+        <div class="w-full inline-flex flex-nowrap overflow-hidden">
+            <div class="animate-marquee flex items-center space-x-16 text-3xl md:text-4xl text-gray-400 font-bold opacity-70">
+                <!-- Duplicate list for infinite scroll effect -->
+                <span class="hover:text-blue-600 transition">Google Workspace</span>
+                <span class="hover:text-blue-600 transition"><i class="fa-brands fa-microsoft"></i> Microsoft</span>
+                <span class="hover:text-blue-600 transition">SAP</span>
+                <span class="hover:text-blue-600 transition">Cisco</span>
+                <span class="hover:text-blue-600 transition">HP</span>
+                <span class="hover:text-blue-600 transition">Dell EMC</span>
+                <span class="hover:text-blue-600 transition">Lenovo</span>
+                <span class="hover:text-blue-600 transition">Fortinet</span>
+                <span class="hover:text-blue-600 transition">Hikvision</span>
+                <span class="hover:text-blue-600 transition">CP Plus</span>
+                <!-- Repeated -->
+                <span class="hover:text-blue-600 transition">Google Workspace</span>
+                <span class="hover:text-blue-600 transition"><i class="fa-brands fa-microsoft"></i> Microsoft</span>
+                <span class="hover:text-blue-600 transition">SAP</span>
+                <span class="hover:text-blue-600 transition">Cisco</span>
+                <span class="hover:text-blue-600 transition">HP</span>
+                <span class="hover:text-blue-600 transition">Dell EMC</span>
+                <span class="hover:text-blue-600 transition">Lenovo</span>
+                <span class="hover:text-blue-600 transition">Fortinet</span>
+                <span class="hover:text-blue-600 transition">Hikvision</span>
+                <span class="hover:text-blue-600 transition">CP Plus</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Solutions Grid -->
+    <section id="solutions" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Complete 360° IT Ecosystem</h2>
+                <p class="text-gray-600 text-lg">From setting up your datacenter to migrating your workforce to the cloud, LDS Infotech provides end-to-end deployment.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Hardware -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Enterprise Hardware</h3>
+                    <p class="text-gray-600 mb-4">Servers, Workstations, Laptops, and Storage arrays from HP, Dell, and Lenovo for robust infrastructure.</p>
+                </div>
+
+                <!-- Software & Cloud -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cloud & Software Apps</h3>
+                    <p class="text-gray-600 mb-4">Official deployments for Google Workspace, Microsoft 365, SAP ERP, and custom enterprise SaaS solutions.</p>
+                </div>
+
+                <!-- Networking -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Networking & Firewalls</h3>
+                    <p class="text-gray-600 mb-4">Secure routing, switching, and firewall setups using Cisco, Fortinet, and Sophos for absolute data integrity.</p>
+                </div>
+
+                <!-- Surveillance -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Security & Surveillance</h3>
+                    <p class="text-gray-600 mb-4">CCTV, Biometric Access, NVR/DVR setups, and Smart Monitoring systems for corporate and industrial spaces.</p>
+                </div>
+
+                <!-- GeM Procurement -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border-2 border-blue-500 relative overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+                    <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Govt. Focused</div>
+                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-building-flag"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">GeM Portal Integration</h3>
+                    <p class="text-gray-600 mb-4">Expert handling of Government e-Marketplace tenders, procurement processing, and institutional supply chains.</p>
+                </div>
+                
+                <!-- Support -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">24/7 Managed IT Support</h3>
+                    <p class="text-gray-600 mb-4">Dedicated AMC (Annual Maintenance Contracts), on-site troubleshooting, and remote IT helpdesk services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order / Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-5" data-aos="zoom-in">
+                
+                <!-- Contact Info Sidebar -->
+                <div class="lg:col-span-2 bg-blue-600 text-white p-10 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-2">Ready to Upgrade?</h3>
+                        <p class="text-blue-100 mb-8">Request a custom quotation for hardware, software licensing, or bulk GeM orders. Our enterprise team responds within 2 hours.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <i class="fa-solid fa-location-dot mt-1.5 text-xl text-blue-200"></i>
+                                <div>
+                                    <h4 class="font-bold">Corporate Office</h4>
+                                    <p class="text-blue-100 text-sm">First Floor, SCO No 53,<br>Sector 11, Urban Estate,<br>Panchkula, Haryana-134112, India</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fa-solid fa-phone text-xl text-blue-200"></i>
+                                <div>
+                                    <h4 class="font-bold">Direct Line</h4>
+                                    <a href="tel:+919041198111" class="text-blue-100 hover:text-white transition text-sm">+91-9041198111</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fa-solid fa-envelope text-xl text-blue-200"></i>
+                                <div>
+                                    <h4 class="font-bold">Email Us</h4>
+                                    <a href="mailto:info@ldstec.com" class="text-blue-100 hover:text-white transition text-sm">info@ldstec.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fa-solid fa-globe text-xl text-blue-200"></i>
+                                <div>
+                                    <h4 class="font-bold">Website</h4>
+                                    <a href="https://www.ldstec.com" target="_blank" class="text-blue-100 hover:text-white transition text-sm">www.ldstec.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Area -->
+                <div class="lg:col-span-3 p-10 bg-white">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Place an Order / Inquiry</h3>
+                    
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="formSuccess" class="hidden bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg mb-6 flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-xl"></i>
+                        <div>
+                            <p class="font-bold">Request Drafted Successfully!</p>
+                            <p class="text-sm">Your email client has been opened to send this securely to info@ldstec.com.</p>
+                        </div>
+                    </div>
+
+                    <form id="orderForm" class="space-y-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Company / Org Name *</label>
+                                <input type="text" id="company" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Contact Person *</label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address *</label>
+                                <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Phone Number *</label>
+                                <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Requirement Category</label>
+                            <select id="category" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                                <option>Enterprise Hardware (Servers/Laptops)</option>
+                                <option>Software Licensing (Google/MS/SAP)</option>
+                                <option>Networking & Security</option>
+                                <option>GeM Portal Tender / Procurement</option>
+                                <option>Other System Integration</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Order Details / Specifications *</label>
+                            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50 placeholder-gray-400" placeholder="Please list the products, quantities, or services you require..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-glow w-full bg-gray-900 hover:bg-blue-600 text-white font-bold py-4 rounded-lg transition duration-300 flex justify-center items-center space-x-2">
+                            <span>Submit Order Request</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <span class="text-2xl font-extrabold text-white tracking-tight flex items-center space-x-2 mb-4">
+                    <i class="fa-solid fa-microchip text-blue-500"></i>
+                    <span>LDS INFOTECH</span>
+                </span>
+                <p class="text-sm leading-relaxed mb-4">Empowering modern enterprises and government institutions with robust IT infrastructure, software solutions, and system integration excellence.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-blue-400 transition">About Company</a></li>
+                    <li><a href="#solutions" class="hover:text-blue-400 transition">IT Solutions</a></li>
+                    <li><a href="#gem" class="hover:text-blue-400 transition">GeM Procurement</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400 transition">Contact Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Connect</h4>
+                <p class="text-sm mb-2"><i class="fa-solid fa-envelope mr-2"></i> info@ldstec.com</p>
+                <p class="text-sm mb-2"><i class="fa-solid fa-phone mr-2"></i> +91-9041198111</p>
+                <p class="text-sm"><i class="fa-solid fa-globe mr-2"></i> www.ldstec.com</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-xs">
+            <p>&copy; 2026 LDS Infotech. All Rights Reserved. Authorized OEM Channel Partner.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts for Animations & Form Handling -->
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- AOS.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Particles.js for Hero Section background
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#3b82f6" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.3, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#3b82f6", "opacity": 0.2, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 140, "line_linked": { "opacity": 0.8 } },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+
+        // Form Handling for info@ldstec.com
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent page reload
+            
+            // Get form values
+            const company = document.getElementById('company').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const category = document.getElementById('category').value;
+            const message = document.getElementById('message').value;
+
+            // Construct email body
+            const subject = encodeURIComponent(`Website Order/Inquiry - ${company}`);
+            const body = encodeURIComponent(
+                `New Request from Website:\n\n` +
+                `Company: ${company}\n` +
+                `Contact Person: ${name}\n` +
+                `Email: ${email}\n` +
+                `Phone: ${phone}\n` +
+                `Category: ${category}\n\n` +
+                `Requirements:\n${message}`
+            );
+
+            // Show success message with premium feel
+            document.getElementById('formSuccess').classList.remove('hidden');
+            document.getElementById('orderForm').reset();
+
+            // Trigger mailto client to send to info@ldstec.com
+            window.location.href = `mailto:info@ldstec.com?subject=${subject}&body=${body}`;
+            
+            // Hide success message after 8 seconds
+            setTimeout(() => {
+                document.getElementById('formSuccess').classList.add('hidden');
+            }, 8000);
+        });
+    </script>
+</body>
+</html>
