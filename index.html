@@ -2,9 +2,20 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LDS Infotech | Enterprise IT, Hardware, Cloud & GeM Integration</title>
-    <meta name="description" content="Leading IT System Integrator dealing in Enterprise Hardware, Networking, Surveillance, SAP, Microsoft, Google Workspace & GeM Procurement.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>LDS Infotech | Enterprise IT System Integrator, Cloud, Hardware & GeM Authorized Partner</title>
+    
+    <!-- Enterprise SEO Meta Tags -->
+    <meta name="description" content="Authorized Enterprise IT System Integrator in India. Turnkey Data Center, Dell/HP Servers, Cisco & Fortinet Firewalls, Cloud Solutions (M365, Google Workspace, SAP) & GeM L1 Tender Procurement.">
+    <meta name="keywords" content="Enterprise IT System Integrator, GeM Portal L1 Vendor, Dell Server Distributor, HP Commercial Workstation, Fortinet Firewall Partner, Cisco Switch Supplier, CCTV Surveillance AMC, Cloud ERP Integration, IT Hardware Vendor Tricity">
+    <meta name="author" content="LDS Infotech">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph & Social Cards -->
+    <meta property="og:title" content="LDS Infotech | Enterprise IT, Hardware & GeM Procurement Solutions">
+    <meta property="og:description" content="Bridging Global OEMs with Modern Enterprises. Get instant B2B quotes and GeM procurement support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ldstec.com">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,15 +24,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; }
         
-        /* Particle Background Container */
         #particles-js {
             position: absolute;
             width: 100%;
@@ -31,10 +41,8 @@
             z-index: 0;
         }
 
-        /* Hero Content Overlay */
         .hero-content { position: relative; z-index: 10; }
 
-        /* Smooth Marquee Animation */
         @keyframes scroll {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -42,124 +50,216 @@
         .animate-marquee {
             display: flex;
             width: 200%;
-            animation: scroll 20s linear infinite;
+            animation: scroll 22s linear infinite;
         }
         .animate-marquee:hover { animation-play-state: paused; }
 
-        /* Glowing Button Effect */
-        .btn-glow {
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
-            transition: all 0.3s ease;
+        /* High-Conversion Glowing CTA Buttons */
+        .btn-pulse-glow {
+            position: relative;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.55);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .btn-glow:hover {
-            box-shadow: 0 0 25px rgba(59, 130, 246, 0.8);
-            transform: translateY(-2px);
+        .btn-pulse-glow:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 0 30px rgba(37, 99, 235, 0.85);
         }
 
-        /* Glassmorphism Cards */
+        /* Attention Grabber Floating WhatsApp Button */
+        .wa-float-btn {
+            box-shadow: 0 10px 25px -5px rgba(34, 197, 94, 0.5), 0 8px 10px -6px rgba(34, 197, 94, 0.4);
+            transition: all 0.3s ease-in-out;
+        }
+        .wa-float-btn:hover {
+            transform: scale(1.08) translateY(-4px);
+            box-shadow: 0 15px 30px -5px rgba(34, 197, 94, 0.7);
+        }
+
+        /* Glassmorphism Styling */
         .glass-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Pulsing Dot Effect */
+        @keyframes pulseDot {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(34, 197, 94, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        .pulse-ring {
+            animation: pulseDot 2s infinite;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white pb-16 md:pb-0">
 
     <!-- Top Bar -->
-    <div class="bg-gray-900 text-gray-300 text-xs py-2 hidden md:block">
+    <div class="bg-slate-950 text-slate-300 text-xs py-2.5 hidden md:block border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <div class="flex space-x-6">
-                <span><i class="fa-solid fa-envelope mr-2 text-blue-400"></i> info@ldstec.com</span>
-                <span><i class="fa-solid fa-phone mr-2 text-blue-400"></i> +91-9041198111</span>
-                <span><i class="fa-solid fa-globe mr-2 text-blue-400"></i> www.ldstec.com</span>
+            <div class="flex items-center space-x-6">
+                <span class="inline-flex items-center gap-2"><i class="fa-solid fa-certificate text-emerald-400"></i> Authorized OEM Channel Partner & GeM Registered Integrator</span>
+                <span class="inline-flex items-center gap-2"><i class="fa-solid fa-clock text-blue-400"></i> Turnaround SLA: &lt; 2 Hours</span>
             </div>
-            <div class="flex space-x-4">
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-twitter"></i></a>
+            <div class="flex items-center space-x-6 font-medium">
+                <a href="mailto:info@ldstec.com" class="hover:text-blue-400 transition flex items-center gap-1.5"><i class="fa-solid fa-envelope text-blue-400"></i> info@ldstec.com</a>
+                <a href="tel:+919041198111" class="hover:text-blue-400 transition flex items-center gap-1.5"><i class="fa-solid fa-phone text-blue-400"></i> +91-9041198111</a>
+                <a href="https://wa.me/919041198111?text=Hi%20LDS%20Infotech,%20I%20need%20a%20quotation%20for%20enterprise%20IT%20hardware/licensing." target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Support
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- Main Navigation -->
-    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <!-- Main Navigation Header -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
+            <!-- Brand Logo -->
             <a href="#" class="flex items-center space-x-3 group">
-                <div class="bg-blue-600 text-white p-2 rounded-lg group-hover:rotate-12 transition transform duration-300">
-                    <i class="fa-solid fa-microchip text-2xl"></i>
+                <div class="bg-blue-600 text-white p-2.5 rounded-xl group-hover:scale-105 group-hover:rotate-3 transition transform duration-300 shadow-md shadow-blue-500/30">
+                    <i class="fa-solid fa-network-wired text-xl"></i>
                 </div>
                 <div>
-                    <span class="text-2xl font-extrabold text-gray-900 tracking-tight">LDS INFOTECH</span>
-                    <span class="block text-[10px] font-semibold text-blue-600 tracking-widest uppercase">Global IT Solutions</span>
+                    <span class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight block">LDS INFOTECH</span>
+                    <span class="block text-[9px] sm:text-[10px] font-bold text-blue-600 tracking-widest uppercase -mt-0.5">Enterprise System Integrator</span>
                 </div>
             </a>
-            <nav class="hidden lg:flex space-x-8 text-sm font-semibold text-gray-700">
-                <a href="#about" class="hover:text-blue-600 transition">Company</a>
-                <a href="#solutions" class="hover:text-blue-600 transition">Enterprise Solutions</a>
-                <a href="#oem" class="hover:text-blue-600 transition">OEM Partners</a>
-                <a href="#gem" class="hover:text-blue-600 transition">GeM Portal</a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex space-x-8 text-sm font-semibold text-slate-700">
+                <a href="#bridge-value" class="hover:text-blue-600 transition">SI Value</a>
+                <a href="#solutions" class="hover:text-blue-600 transition">Solutions</a>
+                <a href="#gem" class="hover:text-blue-600 transition">GeM Procurement</a>
+                <a href="#oem" class="hover:text-blue-600 transition">OEM Ecosystem</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Direct Order</a>
             </nav>
-            <a href="#contact" class="hidden md:flex btn-glow bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-bold items-center space-x-2">
-                <span>Request Quote</span>
-                <i class="fa-solid fa-arrow-right text-xs"></i>
-            </a>
+
+            <!-- Action CTAs -->
+            <div class="flex items-center space-x-3">
+                <a href="https://wa.me/919041198111?text=Hello,%20I%20want%20to%20place%20an%20urgent%20BOQ%20order/inquiry." target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-full text-xs font-bold transition shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Quick Quote</span>
+                </a>
+                <a href="#contact" class="btn-pulse-glow text-white px-5 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold inline-flex items-center space-x-2">
+                    <span>Place Order / BOQ</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section with Particles -->
-    <section class="relative bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white py-32 overflow-hidden">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 sm:py-28 md:py-32 overflow-hidden">
         <div id="particles-js"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center hero-content">
-            <div inline-block mb-4 data-aos="fade-down">
-                <span class="bg-blue-500/20 text-blue-300 border border-blue-500/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
-                    Premier System Integrator
-                </span>
+            
+            <!-- Live Signal Badge -->
+            <div class="inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 border border-blue-400/30 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 tracking-wide shadow-inner" data-aos="fade-down">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-ring"></span>
+                Authorized OEM Supply &amp; System Integration
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
-                Powering the Future of <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Enterprise Technology</span>
+
+            <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
+                End-to-End Enterprise IT &amp; <br class="hidden sm:inline">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-300">Turnkey Technology Integration</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 font-light" data-aos="fade-up" data-aos-delay="200">
-                End-to-end IT Infrastructure, Hardware, Cloud Services (Google Workspace, Microsoft, SAP), Networking, and Security Solutions. Trusted GeM Partner for Government Procurement.
+
+            <p class="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 font-normal leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                High-performance enterprise hardware, Cisco &amp; Fortinet network security, Microsoft &amp; Google Cloud licensing, surveillance setups, and verified GeM L1 bidding procurement.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6" data-aos="zoom-in" data-aos-delay="300">
-                <a href="#contact" class="btn-glow bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg w-full sm:w-auto">
-                    Place an Order
+
+            <!-- Dual Primary Call to Action -->
+            <div class="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-4 max-w-md mx-auto sm:max-w-none" data-aos="zoom-in" data-aos-delay="300">
+                <a href="#contact" class="btn-pulse-glow text-white px-8 py-4 rounded-xl font-bold text-base flex justify-center items-center gap-3">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <span>Submit BOQ / Request Quote</span>
                 </a>
-                <a href="#solutions" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition w-full sm:w-auto">
-                    Explore Solutions
+                <a href="https://wa.me/919041198111?text=Hi%20LDS%20Infotech,%20need%20pricing%20for%20our%20enterprise%20IT%20requirement." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-bold text-base flex justify-center items-center gap-3 shadow-lg shadow-emerald-950/40 transition">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Chat on WhatsApp</span>
                 </a>
+            </div>
+
+            <!-- Instant Highlights -->
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-left max-w-4xl mx-auto pt-8 border-t border-slate-800/80">
+                <div class="flex items-center space-x-3 text-slate-300 text-xs sm:text-sm">
+                    <i class="fa-solid fa-circle-check text-blue-400 text-lg"></i>
+                    <span>100% Genuine OEM Backed</span>
+                </div>
+                <div class="flex items-center space-x-3 text-slate-300 text-xs sm:text-sm">
+                    <i class="fa-solid fa-bolt text-amber-400 text-lg"></i>
+                    <span>Same-Day BOQ Pricing</span>
+                </div>
+                <div class="flex items-center space-x-3 text-slate-300 text-xs sm:text-sm">
+                    <i class="fa-solid fa-landmark text-emerald-400 text-lg"></i>
+                    <span>GeM Authorized Vendor</span>
+                </div>
+                <div class="flex items-center space-x-3 text-slate-300 text-xs sm:text-sm">
+                    <i class="fa-solid fa-headset text-cyan-400 text-lg"></i>
+                    <span>Dedicated Technical AMC</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Global OEM Partners Marquee -->
-    <section id="oem" class="py-8 bg-white border-b border-gray-200 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 mb-4 text-center">
-            <p class="text-sm font-bold text-gray-400 uppercase tracking-widest">Authorized Channel Partner for Global Brands</p>
+    <!-- System Integrator "Bridge" Value Proposition -->
+    <section id="bridge-value" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-blue-900 to-indigo-950 rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl text-white">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-8">
+                        <span class="bg-blue-400/20 text-blue-200 border border-blue-400/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">The System Integrator Advantage</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold mt-3 mb-4 leading-snug">The Reliable Bridge Between Global OEMs &amp; Your Enterprise</h2>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            OEMs build powerful tech, but your enterprise needs proper sizing, compliance, installation, warranty handling, and 24/7 technical ground support. As your certified System Integrator, LDS Infotech takes single-point responsibility for everything from bill-of-materials optimization to post-deployment AMC.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
+                        <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/15 text-center">
+                            <span class="block text-2xl font-black text-blue-300">100+</span>
+                            <span class="text-xs text-slate-300 font-medium">Enterprise &amp; PSU Implementations</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/15 text-center">
+                            <span class="block text-2xl font-black text-emerald-400">100%</span>
+                            <span class="text-xs text-slate-300 font-medium">Original OEM Sourced &amp; Certified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global OEM Partners Infinite Marquee -->
+    <section id="oem" class="py-10 bg-slate-50 border-b border-slate-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 mb-5 text-center">
+            <p class="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-widest">Authorized Channel Partner for Global Brands</p>
         </div>
         <div class="w-full inline-flex flex-nowrap overflow-hidden">
-            <div class="animate-marquee flex items-center space-x-16 text-3xl md:text-4xl text-gray-400 font-bold opacity-70">
-                <!-- Duplicate list for infinite scroll effect -->
-                <span class="hover:text-blue-600 transition">Google Workspace</span>
-                <span class="hover:text-blue-600 transition"><i class="fa-brands fa-microsoft"></i> Microsoft</span>
-                <span class="hover:text-blue-600 transition">SAP</span>
+            <div class="animate-marquee flex items-center space-x-12 sm:space-x-16 text-2xl sm:text-3xl text-slate-400 font-bold opacity-75">
+                <span class="hover:text-blue-600 transition flex items-center gap-2"><i class="fa-brands fa-google text-red-500"></i> Google Workspace</span>
+                <span class="hover:text-blue-600 transition flex items-center gap-2"><i class="fa-brands fa-microsoft text-blue-500"></i> Microsoft 365</span>
+                <span class="hover:text-blue-600 transition">SAP ERP</span>
                 <span class="hover:text-blue-600 transition">Cisco</span>
-                <span class="hover:text-blue-600 transition">HP</span>
+                <span class="hover:text-blue-600 transition">HP Enterprise</span>
                 <span class="hover:text-blue-600 transition">Dell EMC</span>
-                <span class="hover:text-blue-600 transition">Lenovo</span>
+                <span class="hover:text-blue-600 transition">Lenovo ThinkSystem</span>
                 <span class="hover:text-blue-600 transition">Fortinet</span>
                 <span class="hover:text-blue-600 transition">Hikvision</span>
                 <span class="hover:text-blue-600 transition">CP Plus</span>
-                <!-- Repeated -->
-                <span class="hover:text-blue-600 transition">Google Workspace</span>
-                <span class="hover:text-blue-600 transition"><i class="fa-brands fa-microsoft"></i> Microsoft</span>
-                <span class="hover:text-blue-600 transition">SAP</span>
+                <!-- Loop -->
+                <span class="hover:text-blue-600 transition flex items-center gap-2"><i class="fa-brands fa-google text-red-500"></i> Google Workspace</span>
+                <span class="hover:text-blue-600 transition flex items-center gap-2"><i class="fa-brands fa-microsoft text-blue-500"></i> Microsoft 365</span>
+                <span class="hover:text-blue-600 transition">SAP ERP</span>
                 <span class="hover:text-blue-600 transition">Cisco</span>
-                <span class="hover:text-blue-600 transition">HP</span>
+                <span class="hover:text-blue-600 transition">HP Enterprise</span>
                 <span class="hover:text-blue-600 transition">Dell EMC</span>
-                <span class="hover:text-blue-600 transition">Lenovo</span>
+                <span class="hover:text-blue-600 transition">Lenovo ThinkSystem</span>
                 <span class="hover:text-blue-600 transition">Fortinet</span>
                 <span class="hover:text-blue-600 transition">Hikvision</span>
                 <span class="hover:text-blue-600 transition">CP Plus</span>
@@ -168,168 +268,197 @@
     </section>
 
     <!-- Enterprise Solutions Grid -->
-    <section id="solutions" class="py-24 bg-gray-50">
+    <section id="solutions" class="py-20 sm:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Complete 360° IT Ecosystem</h2>
-                <p class="text-gray-600 text-lg">From setting up your datacenter to migrating your workforce to the cloud, LDS Infotech provides end-to-end deployment.</p>
+                <span class="text-blue-600 font-bold text-xs uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-md">Integrated Solutions</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-4">Complete 360° Enterprise Infrastructure</h2>
+                <p class="text-slate-600 text-sm sm:text-base">We handle everything: requirement sizing, bill-of-materials sourcing, deployment, and ongoing enterprise warranty support.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Hardware -->
-                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- 1. Enterprise Hardware -->
+                <div class="glass-card p-7 sm:p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-slate-200" data-aos="fade-up" data-aos-delay="100">
                     <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
                         <i class="fa-solid fa-server"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Enterprise Hardware</h3>
-                    <p class="text-gray-600 mb-4">Servers, Workstations, Laptops, and Storage arrays from HP, Dell, and Lenovo for robust infrastructure.</p>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">Enterprise Hardware &amp; Storage</h3>
+                    <p class="text-slate-600 text-sm mb-4">Rack &amp; blade servers, storage arrays (NAS/SAN), high-end mobile workstations, and commercial laptops from Dell, HP, and Lenovo.</p>
+                    <a href="#contact" class="text-blue-600 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:text-blue-800">Request Specs &amp; Price <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                 </div>
 
-                <!-- Software & Cloud -->
-                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                <!-- 2. Cloud & SaaS -->
+                <div class="glass-card p-7 sm:p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-slate-200" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-indigo-100 w-14 h-14 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-6">
                         <i class="fa-solid fa-cloud"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Cloud & Software Apps</h3>
-                    <p class="text-gray-600 mb-4">Official deployments for Google Workspace, Microsoft 365, SAP ERP, and custom enterprise SaaS solutions.</p>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">Cloud, Software &amp; ERP</h3>
+                    <p class="text-slate-600 text-sm mb-4">Certified migrations and licensing for Google Workspace, Microsoft 365, SAP Business One/S4HANA, and hybrid virtual servers.</p>
+                    <a href="#contact" class="text-indigo-600 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:text-indigo-800">License Inquiry <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                 </div>
 
-                <!-- Networking -->
-                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-                        <i class="fa-solid fa-network-wired"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Networking & Firewalls</h3>
-                    <p class="text-gray-600 mb-4">Secure routing, switching, and firewall setups using Cisco, Fortinet, and Sophos for absolute data integrity.</p>
-                </div>
-
-                <!-- Surveillance -->
-                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="400">
-                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                <!-- 3. Networking & Security -->
+                <div class="glass-card p-7 sm:p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-slate-200" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-cyan-100 w-14 h-14 rounded-xl flex items-center justify-center text-cyan-600 text-2xl mb-6">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Security & Surveillance</h3>
-                    <p class="text-gray-600 mb-4">CCTV, Biometric Access, NVR/DVR setups, and Smart Monitoring systems for corporate and industrial spaces.</p>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">Next-Gen Firewalls &amp; Switching</h3>
+                    <p class="text-slate-600 text-sm mb-4">Fortinet, Sophos, and Cisco enterprise switching, UTM firewalls, structured fiber cabling, and secure remote VPN configurations.</p>
+                    <a href="#contact" class="text-cyan-600 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:text-cyan-800">Network Assessment <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                 </div>
 
-                <!-- GeM Procurement -->
-                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border-2 border-blue-500 relative overflow-hidden" data-aos="fade-up" data-aos-delay="500">
-                    <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Govt. Focused</div>
-                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                <!-- 4. GeM Portal Integration -->
+                <div id="gem" class="glass-card p-7 sm:p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border-2 border-emerald-500 relative overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <div class="absolute top-0 right-0 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-bl-lg">Government &amp; PSU</div>
+                    <div class="bg-emerald-100 w-14 h-14 rounded-xl flex items-center justify-center text-emerald-600 text-2xl mb-6">
                         <i class="fa-solid fa-building-flag"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">GeM Portal Integration</h3>
-                    <p class="text-gray-600 mb-4">Expert handling of Government e-Marketplace tenders, procurement processing, and institutional supply chains.</p>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">GeM Portal Bidding &amp; Supply</h3>
+                    <p class="text-slate-600 text-sm mb-4">Direct purchase, L1 comparison, proprietary item bidding, and prompt technical BOQ compliance for GeM portal tenders.</p>
+                    <a href="#contact" class="text-emerald-700 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:text-emerald-900">Submit GeM Tender No. <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                 </div>
-                
-                <!-- Support -->
-                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="600">
-                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+
+                <!-- 5. Surveillance & Smart Systems -->
+                <div class="glass-card p-7 sm:p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-slate-200" data-aos="fade-up" data-aos-delay="500">
+                    <div class="bg-rose-100 w-14 h-14 rounded-xl flex items-center justify-center text-rose-600 text-2xl mb-6">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">CCTV Surveillance &amp; Racks</h3>
+                    <p class="text-slate-600 text-sm mb-4">Industrial-grade NVR setups, IP dome/bullet cameras, biometric turnstiles, and heavy-gauge wall-mount server/DVR rack solutions.</p>
+                    <a href="#contact" class="text-rose-600 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:text-rose-800">Configure Security <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- 6. Managed AMC Support -->
+                <div class="glass-card p-7 sm:p-8 rounded-2xl hover:-translate-y-2 transition duration-300 border border-slate-200" data-aos="fade-up" data-aos-delay="600">
+                    <div class="bg-amber-100 w-14 h-14 rounded-xl flex items-center justify-center text-amber-600 text-2xl mb-6">
                         <i class="fa-solid fa-headset"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">24/7 Managed IT Support</h3>
-                    <p class="text-gray-600 mb-4">Dedicated AMC (Annual Maintenance Contracts), on-site troubleshooting, and remote IT helpdesk services.</p>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">24/7 Managed IT AMC</h3>
+                    <p class="text-slate-600 text-sm mb-4">Comprehensive annual maintenance contracts (AMC), guaranteed SLA response times, on-site engineer dispatch, and preventative health checks.</p>
+                    <a href="#contact" class="text-amber-700 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 hover:text-amber-900">Get AMC Quote <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Order / Contact Section -->
-    <section id="contact" class="py-24 bg-white">
+    <!-- Urgent Order / Quotation Form Section -->
+    <section id="contact" class="py-20 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-5" data-aos="zoom-in">
+            <div class="bg-slate-900 rounded-3xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-5" data-aos="zoom-in">
                 
-                <!-- Contact Info Sidebar -->
-                <div class="lg:col-span-2 bg-blue-600 text-white p-10 flex flex-col justify-between">
+                <!-- Contact Sidebar -->
+                <div class="lg:col-span-2 bg-gradient-to-br from-blue-700 to-indigo-800 text-white p-8 sm:p-10 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-3xl font-bold mb-2">Ready to Upgrade?</h3>
-                        <p class="text-blue-100 mb-8">Request a custom quotation for hardware, software licensing, or bulk GeM orders. Our enterprise team responds within 2 hours.</p>
+                        <div class="inline-flex items-center gap-2 bg-white/20 text-white text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wide">
+                            <i class="fa-solid fa-bolt text-yellow-300"></i> Fast Quote Turnaround
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold mb-3 leading-snug">Ready to Deploy or Place an Order?</h3>
+                        <p class="text-blue-100 text-sm mb-8 leading-relaxed">
+                            Share your BOQ specs or procurement schedule. Our certified solution architects deliver formal quotes, OEM authorization proofs, and delivery estimates within 2 hours.
+                        </p>
                         
-                        <div class="space-y-6">
+                        <div class="space-y-5 text-sm">
                             <div class="flex items-start space-x-4">
-                                <i class="fa-solid fa-location-dot mt-1.5 text-xl text-blue-200"></i>
+                                <i class="fa-solid fa-location-dot mt-1 text-xl text-blue-300"></i>
                                 <div>
-                                    <h4 class="font-bold">Corporate Office</h4>
-                                    <p class="text-blue-100 text-sm">First Floor, SCO No 53,<br>Sector 11, Urban Estate,<br>Panchkula, Haryana-134112, India</p>
+                                    <h4 class="font-bold text-white">Registered Office</h4>
+                                    <p class="text-blue-100 text-xs leading-relaxed">First Floor, SCO No 53, Sector 11, Urban Estate, Panchkula, Haryana-134112, India</p>
                                 </div>
                             </div>
                             <div class="flex items-center space-x-4">
-                                <i class="fa-solid fa-phone text-xl text-blue-200"></i>
+                                <i class="fa-solid fa-phone text-xl text-blue-300"></i>
                                 <div>
-                                    <h4 class="font-bold">Direct Line</h4>
-                                    <a href="tel:+919041198111" class="text-blue-100 hover:text-white transition text-sm">+91-9041198111</a>
+                                    <h4 class="font-bold text-white">Direct Line</h4>
+                                    <a href="tel:+919041198111" class="text-blue-100 hover:text-white font-mono transition text-xs">+91-9041198111</a>
                                 </div>
                             </div>
                             <div class="flex items-center space-x-4">
-                                <i class="fa-solid fa-envelope text-xl text-blue-200"></i>
+                                <i class="fa-solid fa-envelope text-xl text-blue-300"></i>
                                 <div>
-                                    <h4 class="font-bold">Email Us</h4>
-                                    <a href="mailto:info@ldstec.com" class="text-blue-100 hover:text-white transition text-sm">info@ldstec.com</a>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-4">
-                                <i class="fa-solid fa-globe text-xl text-blue-200"></i>
-                                <div>
-                                    <h4 class="font-bold">Website</h4>
-                                    <a href="https://www.ldstec.com" target="_blank" class="text-blue-100 hover:text-white transition text-sm">www.ldstec.com</a>
+                                    <h4 class="font-bold text-white">Email Address</h4>
+                                    <a href="mailto:info@ldstec.com" class="text-blue-100 hover:text-white transition text-xs">info@ldstec.com</a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-white/20">
+                        <a href="https://wa.me/919041198111?text=Hi%20LDS%20Infotech,%20sending%20urgent%20inquiry%20regarding%20IT%20Hardware." target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-sm transition shadow-lg">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Chat Directly with Sales Head</span>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Form Area -->
-                <div class="lg:col-span-3 p-10 bg-white">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Place an Order / Inquiry</h3>
-                    
-                    <!-- Success Message (Hidden by default) -->
-                    <div id="formSuccess" class="hidden bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg mb-6 flex items-center space-x-3">
-                        <i class="fa-solid fa-circle-check text-xl"></i>
+                <!-- High-Conversion Interactive Form Area -->
+                <div class="lg:col-span-3 p-8 sm:p-10 bg-white">
+                    <div class="flex justify-between items-center mb-6">
                         <div>
-                            <p class="font-bold">Request Drafted Successfully!</p>
-                            <p class="text-sm">Your email client has been opened to send this securely to info@ldstec.com.</p>
+                            <h3 class="text-2xl font-extrabold text-slate-900">Request Quotation / Submit BOQ</h3>
+                            <p class="text-xs text-slate-500 mt-1">Fill the details below or send directly via WhatsApp.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Confirmation Alert -->
+                    <div id="formSuccess" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-800 px-4 py-3 rounded-xl mb-6 flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-2xl text-emerald-600"></i>
+                        <div>
+                            <p class="font-bold text-sm">Request Prepared!</p>
+                            <p class="text-xs text-emerald-700">Opening your email draft for secure transmission to info@ldstec.com.</p>
                         </div>
                     </div>
 
-                    <form id="orderForm" class="space-y-5">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <form id="orderForm" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-sm font-semibold text-gray-700 mb-1">Company / Org Name *</label>
-                                <input type="text" id="company" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="company">Company / Organization *</label>
+                                <input type="text" id="company" required placeholder="e.g. Enterprise / Dept Name" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition text-sm bg-slate-50">
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-gray-700 mb-1">Contact Person *</label>
-                                <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                            <div>
-                                <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address *</label>
-                                <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold text-gray-700 mb-1">Phone Number *</label>
-                                <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="name">Contact Person *</label>
+                                <input type="text" id="name" required placeholder="Your full name" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition text-sm bg-slate-50">
                             </div>
                         </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="email">Official Email *</label>
+                                <input type="email" id="email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition text-sm bg-slate-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="phone">Phone / WhatsApp *</label>
+                                <input type="tel" id="phone" required placeholder="+91 XXXXX XXXXX" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition text-sm bg-slate-50">
+                            </div>
+                        </div>
+
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-1">Requirement Category</label>
-                            <select id="category" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
-                                <option>Enterprise Hardware (Servers/Laptops)</option>
-                                <option>Software Licensing (Google/MS/SAP)</option>
-                                <option>Networking & Security</option>
-                                <option>GeM Portal Tender / Procurement</option>
-                                <option>Other System Integration</option>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="category">Requirement Focus</label>
+                            <select id="category" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition text-sm bg-slate-50 font-medium">
+                                <option>Enterprise Hardware (Dell/HP Servers &amp; Workstations)</option>
+                                <option>Software Licensing (Google Workspace / Microsoft 365 / SAP)</option>
+                                <option>Networking &amp; Next-Gen Firewalls (Fortinet/Cisco)</option>
+                                <option>GeM Portal Tender / L1 BOQ Procurement</option>
+                                <option>CCTV Surveillance, DVR Racks &amp; Access Control</option>
+                                <option>Annual IT Maintenance Contract (AMC)</option>
                             </select>
                         </div>
+
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-1">Order Details / Specifications *</label>
-                            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50 placeholder-gray-400" placeholder="Please list the products, quantities, or services you require..."></textarea>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1" for="message">BOQ Details / Product Specs *</label>
+                            <textarea id="message" rows="3" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition text-sm bg-slate-50 placeholder-slate-400" placeholder="List item names, quantities, server configuration specs, or GeM tender details..."></textarea>
                         </div>
-                        <button type="submit" class="btn-glow w-full bg-gray-900 hover:bg-blue-600 text-white font-bold py-4 rounded-lg transition duration-300 flex justify-center items-center space-x-2">
-                            <span>Submit Order Request</span>
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </button>
+
+                        <!-- Dual Action Buttons -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                            <button type="submit" class="btn-pulse-glow w-full text-white font-bold py-3.5 px-4 rounded-xl text-sm flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Send via Email</span>
+                            </button>
+                            <button type="button" id="sendWhatsappBtn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl text-sm flex justify-center items-center gap-2 transition shadow-md">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>Send via WhatsApp</span>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -337,111 +466,154 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-                <span class="text-2xl font-extrabold text-white tracking-tight flex items-center space-x-2 mb-4">
+                <span class="text-2xl font-black text-white tracking-tight flex items-center gap-2 mb-3">
                     <i class="fa-solid fa-microchip text-blue-500"></i>
                     <span>LDS INFOTECH</span>
                 </span>
-                <p class="text-sm leading-relaxed mb-4">Empowering modern enterprises and government institutions with robust IT infrastructure, software solutions, and system integration excellence.</p>
+                <p class="text-xs sm:text-sm leading-relaxed mb-4 text-slate-400">
+                    Trusted Enterprise System Integrator. Supplying certified infrastructure, IT hardware, next-generation network security, and institutional GeM procurement across India.
+                </p>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#about" class="hover:text-blue-400 transition">About Company</a></li>
-                    <li><a href="#solutions" class="hover:text-blue-400 transition">IT Solutions</a></li>
-                    <li><a href="#gem" class="hover:text-blue-400 transition">GeM Procurement</a></li>
-                    <li><a href="#contact" class="hover:text-blue-400 transition">Contact Support</a></li>
+                <h4 class="text-white font-bold mb-3 uppercase text-xs tracking-wider">Quick Navigation</h4>
+                <ul class="space-y-2 text-xs sm:text-sm">
+                    <li><a href="#bridge-value" class="hover:text-blue-400 transition">SI Value Proposition</a></li>
+                    <li><a href="#solutions" class="hover:text-blue-400 transition">Enterprise Infrastructure</a></li>
+                    <li><a href="#gem" class="hover:text-blue-400 transition">GeM Procurement Support</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400 transition">Request Instant Quotation</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Connect</h4>
-                <p class="text-sm mb-2"><i class="fa-solid fa-envelope mr-2"></i> info@ldstec.com</p>
-                <p class="text-sm mb-2"><i class="fa-solid fa-phone mr-2"></i> +91-9041198111</p>
-                <p class="text-sm"><i class="fa-solid fa-globe mr-2"></i> www.ldstec.com</p>
+                <h4 class="text-white font-bold mb-3 uppercase text-xs tracking-wider">Headquarters &amp; Contact</h4>
+                <p class="text-xs mb-2 leading-relaxed"><i class="fa-solid fa-location-dot text-blue-400 mr-2"></i> First Floor, SCO No 53, Sector 11, Urban Estate, Panchkula, Haryana-134112</p>
+                <p class="text-xs mb-2"><i class="fa-solid fa-phone text-blue-400 mr-2"></i> +91-9041198111</p>
+                <p class="text-xs"><i class="fa-solid fa-envelope text-blue-400 mr-2"></i> info@ldstec.com</p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-xs">
-            <p>&copy; 2026 LDS Infotech. All Rights Reserved. Authorized OEM Channel Partner.</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+            <p>&copy; 2026 LDS Infotech. All Rights Reserved. Authorized OEM Partner &amp; GeM Solutions Provider.</p>
         </div>
     </footer>
 
-    <!-- Scripts for Animations & Form Handling -->
-    <!-- Particles.js -->
+    <!-- Attention-Grabbing Floating WhatsApp Button (Desktop & Mobile) -->
+    <aside aria-label="Customer Support" class="fixed bottom-20 md:bottom-8 right-5 z-50 flex items-center group">
+        <!-- Floating Prompt Tooltip -->
+        <span class="hidden md:inline-block bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-full mr-3 shadow-xl border border-slate-700 opacity-95 group-hover:opacity-100 transition whitespace-nowrap">
+            Need BOQ Price? Chat with us <span class="text-emerald-400 font-bold">&bull; Online</span>
+        </span>
+        
+        <a href="https://wa.me/919041198111?text=Hi%20LDS%20Infotech,%20I%20have%20an%20urgent%20inquiry%20for%20Enterprise%20IT%20Hardware/Software." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Direct WhatsApp Order and Inquiry"
+           class="wa-float-btn bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-xl relative">
+            <i class="fa-brands fa-whatsapp"></i>
+            <!-- Radar ping ring around button -->
+            <span class="absolute -top-1 -right-1 flex h-4 w-4">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-4 w-4 bg-emerald-500 border-2 border-white"></span>
+            </span>
+        </a>
+    </aside>
+
+    <!-- Mobile-Only Sticky Bottom Action Bar (Conversion Optimized) -->
+    <nav aria-label="Mobile Quick Actions" class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 py-2.5 px-4 flex items-center justify-between gap-3 md:hidden shadow-lg">
+        <a href="tel:+919041198111" class="flex-1 bg-slate-900 hover:bg-slate-800 text-white text-center py-2.5 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone text-blue-400"></i> Call Sales
+        </a>
+        <a href="#contact" class="flex-1 btn-pulse-glow text-white text-center py-2.5 rounded-xl font-bold text-xs flex items-center justify-center gap-1.5">
+            <i class="fa-solid fa-file-lines"></i> Place Order / BOQ
+        </a>
+        <a href="https://wa.me/919041198111?text=Hi%20LDS%20Infotech,%20need%20urgent%20quote%20on%20mobile." target="_blank" class="bg-emerald-600 text-white p-2.5 rounded-xl text-center text-lg flex items-center justify-center">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </nav>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- AOS.js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script>
-        // Initialize AOS animations
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-        });
+        // Init AOS
+        AOS.init({ duration: 750, once: true, offset: 80 });
 
-        // Initialize Particles.js for Hero Section background
+        // Hero Particles setup
         particlesJS("particles-js", {
             "particles": {
-                "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#3b82f6" },
+                "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#60a5fa" },
                 "shape": { "type": "circle" },
-                "opacity": { "value": 0.3, "random": false },
+                "opacity": { "value": 0.25, "random": false },
                 "size": { "value": 3, "random": true },
-                "line_linked": { "enable": true, "distance": 150, "color": "#3b82f6", "opacity": 0.2, "width": 1 },
-                "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+                "line_linked": { "enable": true, "distance": 140, "color": "#3b82f6", "opacity": 0.2, "width": 1 },
+                "move": { "enable": true, "speed": 1.8, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
             },
             "interactivity": {
                 "detect_on": "canvas",
-                "events": {
-                    "onhover": { "enable": true, "mode": "grab" },
-                    "onclick": { "enable": true, "mode": "push" },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": { "distance": 140, "line_linked": { "opacity": 0.8 } },
-                    "push": { "particles_nb": 4 }
-                }
+                "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true },
+                "modes": { "grab": { "distance": 130, "line_linked": { "opacity": 0.7 } } }
             },
             "retina_detect": true
         });
 
-        // Form Handling for info@ldstec.com
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent page reload
-            
-            // Get form values
-            const company = document.getElementById('company').value;
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const category = document.getElementById('category').value;
-            const message = document.getElementById('message').value;
+        // Helper to collect form content
+        function getFormData() {
+            return {
+                company: document.getElementById('company').value.trim(),
+                name: document.getElementById('name').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                phone: document.getElementById('phone').value.trim(),
+                category: document.getElementById('category').value,
+                message: document.getElementById('message').value.trim()
+            };
+        }
 
-            // Construct email body
-            const subject = encodeURIComponent(`Website Order/Inquiry - ${company}`);
+        // Email submission handler
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const data = getFormData();
+
+            const subject = encodeURIComponent(`Urgent Enterprise Order/BOQ - ${data.company}`);
             const body = encodeURIComponent(
-                `New Request from Website:\n\n` +
-                `Company: ${company}\n` +
-                `Contact Person: ${name}\n` +
-                `Email: ${email}\n` +
-                `Phone: ${phone}\n` +
-                `Category: ${category}\n\n` +
-                `Requirements:\n${message}`
+                `Enterprise Inquiry / BOQ Details:\n\n` +
+                `Organization: ${data.company}\n` +
+                `Contact Person: ${data.name}\n` +
+                `Email: ${data.email}\n` +
+                `Phone: ${data.phone}\n` +
+                `Category: ${data.category}\n\n` +
+                `Requirements / Specifications:\n${data.message}`
             );
 
-            // Show success message with premium feel
             document.getElementById('formSuccess').classList.remove('hidden');
-            document.getElementById('orderForm').reset();
-
-            // Trigger mailto client to send to info@ldstec.com
             window.location.href = `mailto:info@ldstec.com?subject=${subject}&body=${body}`;
             
-            // Hide success message after 8 seconds
             setTimeout(() => {
                 document.getElementById('formSuccess').classList.add('hidden');
-            }, 8000);
+            }, 7000);
+        });
+
+        // WhatsApp direct submission button handler
+        document.getElementById('sendWhatsappBtn').addEventListener('click', function() {
+            const data = getFormData();
+            if (!data.company || !data.phone || !data.message) {
+                alert("Please fill in Company, Phone, and Requirements before sending via WhatsApp.");
+                return;
+            }
+
+            const waText = encodeURIComponent(
+                `*New Website Order / BOQ Request*\n\n` +
+                `*Company:* ${data.company}\n` +
+                `*Contact:* ${data.name}\n` +
+                `*Phone:* ${data.phone}\n` +
+                `*Email:* ${data.email}\n` +
+                `*Category:* ${data.category}\n\n` +
+                `*Requirements:*\n${data.message}`
+            );
+
+            window.open(`https://wa.me/919041198111?text=${waText}`, '_blank');
         });
     </script>
 </body>
